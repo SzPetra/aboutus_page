@@ -34,6 +34,10 @@ def petra_page():
 def rebi_page():
 	return render_template("rebi.html")
 
+@app.route("/topic")
+def topic_page():
+	return render_template("topic.html")
+
 @app.route("/")
 def main_page():
 	return render_template("aboutus.html")
