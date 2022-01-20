@@ -18,16 +18,16 @@
 	    <li><a class="mates" href="/rebi">Rebi Jakub</a></li>
 	</ul>
 	</div>
-    <h3> I was born at a very young age. </h3>
+    <h3 id="born-text">  I was born at a very young age. </h3>
     <img scr="">
-    <h3> {{ click_count }} </h3>
+    <h3 id="click-count"> {{ click_count }} </h3>
     <form action="/lorand", method="POST">
-        <button type="submit"> <h3> one metric unit of text(POST) </h3> </button>
+        <button type="submit"> <h3 class="button-text"> one metric unit of text(POST) </h3> </button>
     </form>
     <form action="/lorand", method="DElETE">
-        <button type="submit"> <h3> restart the count </h3> </button>
+        <button type="submit"> <h3 class="button-text"> restart the count </h3> </button>
     </form>
-    <a href="/"> back to the main page </a>
+    <a id="return-page" href="/"> back to the main page </a>
 </div>
 <style>
 		li{float: left;
@@ -55,6 +55,20 @@
 	         font-size:60px;
 	         margin:1px}
 	       .mates{display:inline}
+           #born-text{font-size:20px;
+           color: #dddddd}
+           #click-count{
+           color: #dddddd}
+           button{background-color: rgb(153, 0, 0);
+           border-color: #dddddd;
+           color: black;
+           border-radius: 20px}
+           .button-text{font-size: 20px;
+               color: #dddddd;}
+           #return-page{text-decoration: none;
+           color: #dddddd;
+           font-size: 20px}
+           #return-page:visited{color:rgb(0, 200, 0)}
 	</style>
 </body>
 </html>

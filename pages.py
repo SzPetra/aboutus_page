@@ -23,11 +23,11 @@ def jeno_page():
 def lorand_page():
 	# requests_counts = read_file()
 	if request.method == "GET":
-		requests_counts["GET"] = 0
+		requests_counts["POST"] = 0
 	if request.method == "POST":
 		requests_counts["POST"] += 1
 	if request.method == "DELETE":
-		requests_counts["GET"] = 0
+		requests_counts["POST"] = 0
 	# print(requests_counts)
 	# write_file(requests_counts)
 	return render_template("lorand.html", click_count=requests_counts["POST"])
