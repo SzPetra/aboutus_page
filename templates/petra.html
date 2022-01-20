@@ -8,29 +8,31 @@
 	<div class = "kacsa">
 	<h1>Petra Szilagyi</h1>
 	<ul>
-	    <li><a href="/">About us</a></li>
-	    <li><a href="/aaron">Aaron Szabo</a></li>
-	    <li><a href="/balazs">Balazs Nyitrai</a></li>
-	    <li><a href="/imi">Imi Szabo</a></li>
-	    <li><a href="/jeno">Jeno Racz</a></li>
-	    <li><a href="/lorand">Lorand Kis</a></li>
-	    <li><a href="/miki">Miki Bartal</a></li>
-	    <li><a href="/rebi">Rebi Jakub</a></li>
+	    <li><a class="mates" href="/">About us</a></li>
+	    <li><a class="mates" href="/aaron">Aaron Szabo</a></li>
+	    <li><a class="mates" href="/balazs">Balazs Nyitrai</a></li>
+	    <li><a class="mates" href="/imi">Imi Szabo</a></li>
+	    <li><a class="mates" href="/jeno">Jeno Racz</a></li>
+	    <li><a class="mates" href="/lorand">Lorand Kis</a></li>
+	    <li><a class="mates" href="/miki">Miki Bartal</a></li>
+	    <li><a class="mates" href="/rebi">Rebi Jakub</a></li>
 	</ul>
 	</div>
+    <img src="img/horshoe.JPG">
+	<p id="ap-p">You can book an appointment on this <a id="ap-link" href="/appoint">link</a> every weekday between 12-13.<br>The sessions are 10 minutes long,<br>and you can talk about whatever you like!</p>
 <style>
 	li{float: left;
 	   border-right: 1px solid rgb(0,0,0)}
-	a{text-decoration: none;
-	  display: block;
-          padding: 8px;
-          color:rgb(0,0,0)}
-        a:visited{color:rgb(0,0,0)}
+	.mates{text-decoration: none;
+	      display: block;
+             padding: 8px;
+             color:rgb(0,0,0)}
+        .mates:visited{color:rgb(0,0,0)}
         ul{list-style-type: none;
            overflow: hidden;
            width: 100%;
            margin-top:20px}
-	 li a:hover{color: #dddddd;
+	 li .mates:hover{color: #dddddd;
 	            background-color:rgb(153, 0, 0);
 		    font-size:20px;
 		    position:center}
@@ -43,7 +45,12 @@
 	  h1{white-space:nowrap;
 	     font-size:60px;
 	     margin:1px}
-	  a{display:inline}
+	  .mates{display:inline}
+	  #ap-link{color:black;
+	          font-size:20px}
+	  #ap-link:visited{color:black}
+	  #ap-p{color:#dddddd;
+	       font-size:20px}
 </style>
 </body>
 </html>
