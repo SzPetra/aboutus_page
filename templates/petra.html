@@ -18,8 +18,17 @@
 	    <li><a class="mates" href="/rebi">Rebi Jakub</a></li>
 	</ul>
 	</div>
-	<img src="../static/img/horshoe.JPG" width=400px>
-	<p>I love travelling...</p>
+	<div class="images">
+		<div class="image-container">
+			<img src="../static/img/holly_petra.JPG">
+			<img class="transition-image" src="../static/img/ts_petra.JPG">
+		</div>
+		<div class="image-container">
+			<img src="../static/img/lv_petra.JPG">
+			<img class="transition-image" src="../static/img/petra_hair.JPG">
+		</div>
+	</div>
+	<p id="intro">Hey! It's me, Petra. I am 23 years old and I love travelling.<br>My biggest trip so far was to America. I lived there for two years.<br>I found it interesting how people really are different and have different cultures<br>and hope to get to know a whole lot more in the future.<br>This is one of the reasons why I applied to CodeCool,<br>because I am hoping I will be able to manage to do both at the same time.<br><strong>Travel a lot, work (a lot) online.</strong> </p>
 	<p id="ap-p">You can book an appointment on this <a id="ap-link" href="/appoint">link</a> every weekday between 12-13.<br>The sessions are 10 minutes long,<br>and you can talk about whatever you like!</p>
 <style>
 	li{float: left;
@@ -51,8 +60,24 @@
 	          font-size:20px}
 	  #ap-link:visited{color:black}
 	  #ap-p{color:#dddddd;
-	       font-size:20px}
-	  img{float:right}
+	       font-size:20px;
+	       padding-top:105px}
+	  #intro{font-size:22px;
+	        color:#dddddd}
+	  .image-container{height:500px;
+	                  width:360px;
+	                  position:relative;
+	                  float:right}
+	  .image-container img{height:100%;
+	                      width:100%}
+	  .transition-image{position:absolute;
+	  	           top:0px;
+	  	           left:0px;
+	  	           opacity:0;
+	  	           transition:opacity 0.5s ease}
+	  .transition-image:hover{opacity:100%}
+	  .images{margin-right:1px;
+	         margin-top:8px}
 </style>
 </body>
 </html>
