@@ -1,6 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app=Flask(__name__)
+requests_counts = {"GET": 0, "POST": 0, "DELETE": 0}
 
 @app.route("/aaron")
 def aron_page():
@@ -18,9 +19,18 @@ def imi_page():
 def jeno_page():
 	return render_template("jeno.html")
 
-@app.route("/lorand")
+@app.route("/lorand", methods=["GET", "POST", "DELETE"])
 def lorand_page():
-	return render_template("lorand.html")
+	# requests_counts = read_file()
+	if request.method == "GET":
+		requests_counts["GET"] = 0
+	if request.method == "POST":
+		requests_counts["POST"] += 1
+	if request.method == "DELETE":
+		requests_counts["GET"] = 0
+	# print(requests_counts)
+	# write_file(requests_counts)
+	return render_template("lorand.html", click_count=requests_counts["POST"])
 
 @app.route("/miki")
 def miki_page():
@@ -47,4 +57,4 @@ def main_page():
 	return render_template("aboutus.html")
 	
 if __name__=="__main__":
-	app.run(debug=True, port=8000)
+	app.run(debug=True, port=80800)
