@@ -5,12 +5,60 @@
 	<title>Topics</title>
 </head>
 <body>
+	<div class = "kacsa">
 	<h1>Do you have an idea?</h1>
+	<ul>
+	    <li><a class="mates" href="/">About us</a></li>
+	    <li><a class="mates" href="/aaron">Aaron Szabo</a></li>
+	    <li><a class="mates" href="/balazs">Balazs Nyitrai</a></li>
+	    <li><a class="mates" href="/imi">Imi Szabo</a></li>
+	    <li><a class="mates" href="/jeno">Jeno Racz</a></li>
+	    <li><a class="mates" href="/lorand">Lorand Kis</a></li>
+	    <li><a class="mates" href="/miki">Miki Bartal</a></li>
+	    <li><a class="mates" href="/petra">Petra Szilagyi</a></li>
+	    <li><a class="mates" href="/rebi">Rebi Jakub</a></li>
+	</ul>
+	</div>
 	<h2>Let's do a little brainstorming here</h2>
+	<form>
+		<label for="idea-input">Enter you idea:</label><br>
+		<textarea id="idea-input" name="idea"></textarea><br>
+		<button>save</button>
+	</form>
 	<style>
-		h1{color:rgb(153,0,0)}
 		h2{color:rgb(153,0,0)}
 		body{background-color:#dddddd}
+		label{color:rgb(153,0,0);
+		     font-size:20px}
+		textarea{background-color:#dddddd;
+		         border-color:rgb(153,0,0);
+		         color:rgb(153,0,0)}
+		button{background-color:rgb(153,0,0);
+		      color:#dddddd}
+		li{float: left;
+	          border-right: 1px solid #dddddd}
+	        .mates{text-decoration: none;
+	              display: block;
+                      padding: 8px;
+                      color:rgb(0,0,0)}
+                .mates:visited{color:#dddddd}
+                ul{list-style-type: none;
+                  overflow: hidden;
+                  width: 100%;
+                  margin-top:20px}
+	        li .mates:hover{color:black;
+	                       background-color:#dddddd;
+		               font-size:20px;
+		               position:center}
+	        .kacsa{display: flex;
+	              top:0;
+	              margin: 0;
+	              padding: 8px;
+	              background-color:rgb(153,0,0)}
+	        h1{white-space:nowrap;
+	          font-size:40px;
+	          margin:1px}
+	        .mates{display:inline}
 	</style>
 </body>
 </html>
