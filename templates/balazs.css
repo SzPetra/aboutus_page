@@ -65,9 +65,9 @@ button{
 }
 
 
-#image1{background-image: url('img/1.jpg');}
-#image2{background-image: url('img/2.jpg');}
-#image5{background-image: url('img/5.jpg');}
+#image1{background-image: url('../static/img/1.jpg');}
+#image2{background-image: url('../static/img/2.jpg');}
+#image5{background-image: url('../static/img/5.jpg');}
 
 .parallax{
     height: 800px;
