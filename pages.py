@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, request
 
 app=Flask(__name__)
 
@@ -29,6 +29,10 @@ def miki_page():
 @app.route("/petra")
 def petra_page():
 	return render_template("petra.html")
+
+@app.route("/appoint")
+def appointment_page():
+	return render_template("appoint.html")
 
 @app.route("/rebi")
 def rebi_page():
